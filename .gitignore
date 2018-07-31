@@ -5,6 +5,9 @@
 !.gitignore
 !wp-content/
 
+# Ignore uploads
+wp-content/uploads/
+
 # Ignore node modules
 wp-content/themes/cdpe/node_modules/*
 
