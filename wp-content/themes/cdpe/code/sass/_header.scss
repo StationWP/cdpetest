@@ -1,0 +1,211 @@
+#masthead,
+#masthead2 {
+  .wrap {
+	  position: relative;
+  }
+}
+
+.site-header {
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  .site-branding {
+  	padding: 14px 0 28px;
+  	position: relative;
+  	-webkit-transition: margin-bottom 0.2s;
+  	transition: margin-bottom 0.2s;
+  	z-index: 3;
+  	height: 78px;
+    
+    a {
+    	text-decoration: none;
+    }
+  
+  }
+  
+  .site-title {
+  	clear: none;
+  	font-size: 24px;
+  	font-size: 1.5rem;
+  	font-weight: 800;
+  	line-height: 1.25;
+  	letter-spacing: 0.08em;
+  	margin: 0;
+  	padding: 0;
+  	text-transform: uppercase;
+  }
+
+  /* Site branding */
+    
+  .open-search,
+  .close-search {
+      position: absolute;
+      right: 15px;
+      top: 3px;
+      background-color: #fff;
+      background: url(/wp-content/themes/psifoundation/assets/images/search-icon.png);
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: 5px;
+      width: 45px;
+      height: 45px;
+      border-radius: 0;
+      padding: 0;
+      background-position: 5px;
+      text-indent: -9000px;
+      border: 1px solid #fff;
+  }
+  
+  .close-search {
+      background: url(/wp-content/themes/psifoundation/assets/images/close-icon.png);
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: 9px;
+  }
+  
+  .close-search {
+      top: 18px;
+  }
+  
+}
+
+.global-nav .mag-select button:focus,
+.dialog .mag-select button:focus {
+	background: url(/wp-content/themes/psifoundation/assets/images/search-icon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+	border: 1px solid #5d5d5d !important;
+}
+
+.dialog .mag-select button:focus {
+    background: url(/wp-content/themes/psifoundation/assets/images/close-icon.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 9px;
+}
+
+.global-nav .mag-select button:hover,
+.dialog .mag-select button:hover {
+	border: 1px solid #fff;
+	background: url(/wp-content/themes/psifoundation/assets/images/search-icon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+.dialog .mag-select button:hover {
+	background: url(/wp-content/themes/psifoundation/assets/images/close-icon.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 9px;
+}
+
+.dialog-overlay {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.dialog {
+    z-index: 11;
+    background-color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1072px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 80px;
+}
+
+.dialog-overlay[aria-hidden="true"],
+.dialog[aria-hidden="true"] {
+	display: none;
+}
+
+.dialog-overlay:not([aria-hidden="true"]),
+.dialog:not([aria-hidden="true"]) {
+	display: block;
+}
+
+.dialog .search-form {
+    margin-right: 53px;
+    margin-top: -25px;
+    border: 0;
+}
+
+.dialog .search-form input[type="search"] {
+	border: 0;
+    font-size: 20px;
+}
+
+.dialog .search-submit {
+    position: absolute;
+    top: 80px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #2BBFBB;
+    border-radius: 0;
+}
+
+.search-page-input .search-form {
+	position: relative;
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+.search-page-input .search-form button{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.custom-logo-link {
+	display: inline-block;
+	padding-right: 0;
+	vertical-align: middle;
+	width: auto;
+	border-bottom: 0;
+}
+
+.site-branding .custom-logo-link{ 
+	position: absolute;
+}
+
+.custom-logo-link img {
+	display: block;
+	max-height: 55px;
+	width: auto;
+}
+
+
+.custom-logo-link:hover,
+.custom-logo-link:focus {
+	border-bottom: 0;
+}
+
+body:not(.title-tagline-hidden) .site-branding-text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.custom-header {
+	position: relative;
+}
+
+.nav-spacer {
+	width: 100%;
+	height: 76px;
+}

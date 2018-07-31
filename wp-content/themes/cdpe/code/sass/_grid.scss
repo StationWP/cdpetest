@@ -1,0 +1,18 @@
+.two-col {
+  display: flex;
+  flex-wrap: wrap;
+  
+  .product,
+  .cta,
+  .testimonial {
+    width: 100%;
+    
+		@include respond-min($bp-medium) {
+      width: 50%;
+		}
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

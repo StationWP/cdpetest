@@ -1,0 +1,22 @@
+body {
+  font-size: 16px;
+  width: 100%;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: $charcoal;
+  font-family: $font__sans-serif;
+
+  a,
+  a:hover,
+  a:visited {
+    text-decoration: none;
+  }
+  }
+}
+
+.site-content-contain {
+
+	@include respond-min(1040px) {
+    margin-top: 22px;
+  }
+}

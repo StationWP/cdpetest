@@ -1,0 +1,110 @@
+section {
+  &.contact-header {
+    background-color: $gray;
+    padding: 20px 0 1px;
+    
+    .l-container {
+      padding-top: 0px;
+      padding-bottom: 0px;      
+      
+      @include respond-min($bp-medium) {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+
+      
+      h2 {
+        font-size: 2.25em;
+        font-weight: 700;
+
+        @include respond-min($bp-medium) {
+          max-width: 400px;
+          margin-right: 90px;
+        }
+      }
+    }
+  }
+}
+
+.contact-wrap {
+  h3 {
+    font-size: 1.875em;
+    font-weight: 700;    
+  }
+  
+  .address {
+    margin-bottom: 40px;
+  }
+  
+  .phone-email {
+    a {
+      color: $tangerine;
+      font-weight: 700;
+
+      &:hover {
+        border-bottom: 2px solid $tangerine;
+      }
+    }
+  }
+
+  .contact-intro {
+
+    .l-container {
+      padding-top: 30px;
+      padding-bottom: 0px;
+
+      @include respond-min($bp-medium) {
+        padding-top: 70px;
+      }
+    }
+  }  
+
+
+  .contact-form {
+    #gform_wrapper_1 {
+      width: 100%;
+      
+      @include respond-min($bp-medium) {
+        width: 67.5%;
+      }
+      
+      .top_label {
+        .gfield {
+          position: relative;
+          
+          label {
+            position: absolute;
+            font-size: 14px;
+            font-weight: 400;
+            top: 4px;
+            left: 6px;
+          }
+          input {
+            &.medium {
+              width: 100%;
+              padding: 20px 4px 5px;
+            }
+          }
+          
+          textarea {
+            padding-top: 20px;
+          }
+        }
+      }
+      
+      .gform_footer {
+        input[type=submit] {
+          background-color: $tangerine;
+          padding: 5px 15px;
+          width: auto;
+          text-transform: uppercase;
+          
+          &:hover {
+            background-color: $hoverOrange;
+          }
+        }
+      }
+    }
+  }
+}

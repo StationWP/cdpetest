@@ -1,0 +1,289 @@
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #333;
+	font-weight: 400;
+	line-height: 1.66;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	line-height: 1.4;
+	margin: 0 0 0.75em;
+	padding: 1.5em 0 0;
+	font-weight: 500;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	padding-top: 0;
+}
+
+h1 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+h2 {
+	color: $charcoal;
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+h3 {
+	color: #333;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+h4 {
+	color: #333;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+h5 {
+	color: #767676;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+h6 {
+	color: #333;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+p {
+	margin: 0 0 1.875em;
+	padding: 0;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	color: #666;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-style: italic;
+	line-height: 1.7;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+blockquote cite {
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	margin-top: 0.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+/*abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}*/
+
+mark,
+ins {
+	background: #eee;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+blockquote {
+	quotes: "" "";
+}
+
+q {
+	quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before,
+blockquote:after {
+	content: "";
+}
+
+:focus {
+	outline: none;
+}
+
+// Highlighted Text
+
+.highlight-headline {
+  padding-right: .25em;
+  h2,
+  h3 {
+    display: inline;
+    background-color: $skyblue;
+    position: relative;
+    left: .24em;
+    padding-left: 0;
+    box-shadow: $title-pad 0 0 $skyblue,  
+    $title-pad*-1 0 0 $skyblue;    
+    padding-bottom: 5px;
+    box-decoration-break: clone;
+    
+    a {
+      color: $charcoal;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  h3 {
+    line-height: 46px;
+  }
+}
+
+.highlight-bottom {
+  margin-top: 20px;
+  
+  .highlight-copy {
+    margin-bottom: 20px;
+  
+    p {
+      display: inline;
+      background-color: $white;
+      position: relative;
+      left: $title-pad;
+      box-shadow: $title-pad 0 0 $white,  
+      $title-pad*-1 0 0 $white;  
+      padding: 5px 0;
+      box-decoration-break: clone;
+    }
+
+  }
+
+  a.cta {
+    display: inline-block;
+    padding: 7px 11px;
+    background-color: #ff5e2f;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 700;
+    
+    &:hover {
+      background-color: $hoverOrange;
+    }
+  }
+}
+
+@media screen and (min-width: 30em) { /* 480px */
+
+	/* Typography */
+
+	body,
+	button,
+	input,
+	select,
+	textarea {
+	}
+
+	h1 {
+		font-size: 30px;
+		font-size: 1.875rem;
+	}
+
+	h2,
+	.page .panel-content .recent-posts .entry-title {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+
+	h3 {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	h5 {
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+
+	h6 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+}
+
+@media screen and (min-width: 48em) { /* 768px */
+
+	/* Typography */
+
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 1.75em;
+	}
+
+	.entry-content blockquote.alignleft,
+	.entry-content blockquote.alignright {
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+}

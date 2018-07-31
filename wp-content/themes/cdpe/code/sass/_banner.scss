@@ -1,0 +1,104 @@
+.banner {
+  position: relative;
+  height: auto;
+  font-family: $font__sans-serif;
+  
+	@include respond-min($bp-medium) {
+    padding-top: 0;
+    height: 536px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+//    margin-bottom: 40px;
+	}
+  
+  .banner-image {
+      display: block;  
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 0px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      min-height: 300px;
+      top: 0;
+      left: 0px;
+      height: 100%;    
+
+  }
+  
+  .banner-cta {
+    text-align: left;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+        
+    @include respond-min($bp-medium) {    
+      padding: 40px 20px;
+    }
+
+
+    #banner-top {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 40px 20px 0;
+      max-width: 768px;
+      width: 100%;
+
+      @include respond-min($bp-medium) {    
+        padding: 0;
+      }
+              
+      h2 {
+        font-size: 1.9375em;
+        line-height: 46px;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        left: .24em;     
+        white-space: pre-wrap;
+        box-shadow: 0 0 0 #c5e6ff, -0.25em 0 0 #c5e6ff;
+        padding-right: .25em;  
+        box-decoration-break: clone;
+
+        @include respond-min($bp-medium) {    
+          font-size: 2.25em;
+          line-height: 55px;
+        }
+      }
+    }
+    
+    #banner-bottom {
+      padding: 0px 20px 40px;
+      width: 100%;
+
+      @include respond-min($bp-medium) {    
+        background-color: transparent;
+        padding: 0px;
+      }
+
+      .copy-block {
+        max-width: 603px;
+        
+        p {
+          margin-bottom: 20px;
+          font-size: 1.125em;
+          font-weight: 400;
+          
+        }
+      }
+    }
+  }
+  
+  
+  &.short {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+  }
+}
